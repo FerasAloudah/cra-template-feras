@@ -1,0 +1,8 @@
+{
+  "not_found": {
+    "title": "404 Page not found",
+    "description": "We can't seem to find the page you're looking for"
+  },
+  "home": "Homepage",
+  "about": "About"
+}
