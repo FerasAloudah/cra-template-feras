@@ -2,8 +2,6 @@
   "extends": [
     "airbnb-typescript",
     "airbnb/hooks",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
@@ -16,8 +14,10 @@
     "sourceType": "module"
   },
   "plugins": [
+    "@typescript-eslint",
     "eslint-plugin-import-helpers",
-    "sort-destructure-keys"
+    "sort-destructure-keys",
+    "sort-keys-fix"
   ],
   "rules": {
     "@typescript-eslint/ban-ts-comment": "off",
@@ -108,15 +108,7 @@
         "ignoreDeclarationSort": true
       }
     ],
-    "sort-keys": [
-      "error",
-      "asc",
-      {
-        "caseSensitive": true,
-        "minKeys": 2,
-        "natural": true
-      }
-    ]
+    "sort-keys-fix/sort-keys-fix": "error"
   },
   "settings": {
     "react": {

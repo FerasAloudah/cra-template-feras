@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Redirect, Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 import { ChakraProvider, Container, theme } from '@chakra-ui/react';
+
 import Header from 'components/Header';
 import Spinner from 'components/Spinner';
 import About from 'pages/About';
