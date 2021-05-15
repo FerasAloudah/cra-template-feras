@@ -18,17 +18,14 @@ const Header: React.FC = () => {
     });
   };
 
+  React.useEffect(() => {
+    document.documentElement.setAttribute('dir', i18n.dir());
+    document.documentElement.setAttribute('lang', i18n.language);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
-    <Flex
-      as="header"
-      borderBottomColor={{ base: 'red.500', sm: 'teal.500' }}
-      borderBottomWidth={2}
-      justify="center"
-      mb={10}
-      px={10}
-      py={2}
-      w="full"
-    >
+    <Flex as="header" justify="center" px={10} py={2} w="full">
       <HStack spacing={7}>
         <Link to="/">{t('home')}</Link>
         <Link to="/about">{t('about')}</Link>
