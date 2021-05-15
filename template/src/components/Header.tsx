@@ -25,7 +25,7 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <Flex as="header" justify="center" px={10} py={2} w="full">
+    <Flex as="header" borderBottomColor="teal.500" borderBottomWidth={2} justify="center" px={10} py={2} w="full">
       <HStack spacing={7}>
         <Link to="/">{t('home')}</Link>
         <Link to="/about">{t('about')}</Link>
